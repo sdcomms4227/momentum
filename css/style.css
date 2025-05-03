@@ -1,6 +1,181 @@
-body {
-  background-color: beige;
-}
 .hidden {
   display: none;
 }
+
+/* 1. 실시간 시계 */
+#clock {
+  text-align: center;
+  font-size: 100px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* 2. 로컬 스토리지를 사용한 로그인 */
+#login-form {
+  text-align: right;
+  font-size: 20px;
+  color: white;
+}
+
+#login-form input {
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#login-form input::placeholder {
+  color: white;
+}
+
+#login-form input:focus {
+  outline: none;
+}
+
+#login-form input:focus::placeholder {
+  color: transparent;
+}
+
+#login-form button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#greeting {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+/* 3. 로컬 스토리지를 사용한 투두리스트 */
+#todo-wrap {
+  width: 600px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+#todo-form {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+#todo-form input {
+  width: 280px;
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+#todo-form input::placeholder {
+  color: white;
+}
+
+#todo-form input:focus {
+  outline: none;
+}
+
+#todo-form input:focus::placeholder {
+  color: transparent;
+}
+
+#todo-list {
+  overflow-y: auto;
+  height:400px;
+  list-style: none;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+#todo-list:empty::before {
+  content: "No todos";
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#todo-list li button {
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  margin-left: 10px;
+}
+
+#todo-list li button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* 4. 랜덤 배경 이미지 */
+body {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* 5. 날씨와 위치 (geolocation) */
+#weather {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+#weather span:first-child {
+  font-size: 20px;
+  color: white;
+}
+
+#weather span:last-child {
+  font-size: 20px;
+  color: white;
+}
+
+/* 6. 랜덤 명언 */
+#quote {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+#quote span:first-child {
+  display: block;
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+} 
+
+#quote span:last-child {
+  display: inline-block;
+  font-size: 12px;
+  font-style: italic;
+  color: white;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
